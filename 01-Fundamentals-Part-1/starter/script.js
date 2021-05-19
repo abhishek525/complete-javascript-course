@@ -170,7 +170,7 @@ TEST DATA BONUS 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
 GOOD LUCK 😀
-*/
+
 //test case 1
 // const dolphinsAverage = (96 + 108 + 89) / 3;
 // const koalasAverage = (88 + 91 + 110) / 3;
@@ -197,3 +197,56 @@ if (dolphinsAverage === koalasAverage) {
 } else {
     console.log("Not Applicable!")
 }
+*/
+/*
+//Switch statements
+const day = prompt("Enter a from the list monday,tueday, wednesday, thursday, friday, saturday, sunday.")
+console.log(day)
+
+switch (day) {
+    case 'monday':
+        console.log("Really need another day as weekend!")
+        break;
+    case 'tuesday':
+        console.log("Meetings!!!")
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log("Wednesday and Thursdays are cool!")
+        break;
+    case 'friday':
+        console.log("Finish the work early!")
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log("Enjoy your weekend!")
+        break;
+    default:
+        console.log("Enter a valid weekday.")
+}
+*/
+
+//The conditional ternary operator
+//const age = 17;
+//age >= 18 ? console.log("I would like a glass of wine!🍷") : console.log("I will take some water! 🥛")
+
+// Coding Challenge #4
+
+/*
+Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+
+1. Your task is to caluclate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statement 😅 (If it's easier for you, you can start with an if/else statement, and then try to convert it to a ternary operator!)
+2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example: 'The bill was 275, the tip was 41.25, and the total value 316.25'
+
+TEST DATA: Test for bill values 275, 40 and 430
+
+HINT: To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
+
+GOOD LUCK 😀
+*/
+
+
+const bill = 430;
+console.log(`The bill was \$${bill}, the tip is \$${bill >= 50 && bill <= 300 ? bill * .15 : bill * .20}`)
+
